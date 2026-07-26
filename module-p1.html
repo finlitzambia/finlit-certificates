@@ -202,10 +202,10 @@ body{padding:20px 18px 32px}
 </div>
 
 <script>
-  // Pre-fill name from URL param if passed from module
-const urlName  = new URLSearchParams(location.search).get('name');
-const urlScore = new URLSearchParams(location.search).get('score');
-if(urlName){ document.getElementById('nameInput').value = urlName; validate(); }
+ // Pre-fill name from URL param if passed from module
+const urlName = new URLSearchParams(location.search).get('name');
+if(urlName) document.getElementById('nameInput').value = urlName;
+validate();
 // ══ CONFIG — change these 3 lines per module ══════════
 const MODULE_NAME  = 'Module P1 — Financial Concepts Explained';
 const TEMPLATE_URL = 'https://raw.githubusercontent.com/finlitzambia/finlit-certificates/main/templates/module-p1.png';
